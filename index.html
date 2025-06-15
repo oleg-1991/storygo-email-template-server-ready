@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ front_page_headline }}</title>
+    <style>
+        body { font-family: Inter, Arial, sans-serif; margin: 0; padding: 0; }
+        .email-container { max-width: 600px; background-color: #FFFFFF; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
+        .header { background-color: #212425; background-image: url('images/fon_header.svg'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 93px; text-align: center; }
+        .header img { max-width: 150px; width: auto; height: auto; }
+        .content { max-width: 510px; background-color: #F6F6F6; border-radius: 8px; padding: 30px; }
+        .headline { font-size: 25px; font-weight: 500; line-height: 27px; color: #212425; }
+        .deck { font-size: 15px; font-weight: 500; line-height: 21px; color: #212425; }
+        .body-content { font-size: 14px; font-weight: 300; line-height: 21px; color: #212425; }
+        .footer { padding: 56px; text-align: center; color: #7E7E7E; font-size: 14px; line-height: 21px; }
+        .footer a { color: #E0822D; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+            <td align="center">
+
+                <table class="email-container">
+                    
+                    <!--  1. Header -->
+                    <tr>
+                        <td class="header">
+                            <img src="images/logo_go.svg" alt="StoryGo">
+                        </td>
+                    </tr>
+
+                    <!--  2. Main content -->
+                    <tr>
+                        <td align="center" style="padding: 72px 0 0 0;">
+                            <table class="content">
+                                <tr>
+                                    <td style="padding: 20px;">
+
+                                        <h1 class="headline">{{ headline }}</h1>
+                                        <p class="deck">{{ deck }}</p>
+
+                                        <!--  Insert `body` WITHOUT CHANGES -->
+                                        <div class="body-content">
+                                            {{ body|safe }}
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!--  3. Footer -->
+                    <tr>
+                        <td class="footer">
+                            <p>If you have any questions, feel free to message us at 
+                                <a href="mailto:support@storygo.ai">support@storygo.ai</a>
+                            </p>
+                            <p>You are receiving this email because you are a StoryGo user. If you no longer wish to receive these messages, you can unsubscribe.</p>
+                            <p>© 2025 StoryGo. All rights reserved.</p>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
