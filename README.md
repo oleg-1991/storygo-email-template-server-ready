@@ -1,3 +1,5 @@
+[Live preview](https://oleg-1991.github.io/storygo-email-template-server-ready/)
+
 # storygo-email-template-server-ready
 
 Server-ready HTML email template for StoryGo.  
